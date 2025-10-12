@@ -9,11 +9,14 @@
     margin-top: 20px;
 }
 
-/* หัวข้อ */
+/* ตู้หัวข้อ */
 .header-container{
+    margin: auto;
     text-align: center;
+    max-width: 60%;
 }
 
+/* หัวข้อ1 */
 .header-title{
     display: inline-block;
     border: 2px solid black;
@@ -22,9 +25,17 @@
 }
 
 .header-title:hover{
-        background-color: rgb(0, 0, 0);
-        color: #ffffff;
-    }
+    background-color: rgb(0, 0, 0);
+    color: #ffffff;
+}
+
+
+    /* รูปตึก */
+.header-container img{
+    object-fit: cover;
+    max-width: 60%;
+    margin-top: 40px;
+}
 
 .header-title1 {
     font-size: 25px;
@@ -139,19 +150,24 @@
     /* border: solid rebeccapurple; */
     font-size: x-large;
     text-align: center;
+    margin-top: 40px;
+
 }
 
 .Total{
-    text-align: center;
+    /* text-align: center; */
+    display: flex;
+    justify-content: space-around;
+    
 }
 
 /* ตารางรวม */
 .table__total{
-    width: auto;
+    width: fit-content;
+    height:fit-content;
     border-collapse: collapse;
     background-color:#f1f1f1;
-    margin-top: 20px;
-    display: inline-block;
+    margin-top: 70px;
 
     .table,th,td{
          border: solid #000000 2px;
@@ -182,7 +198,23 @@
         background-color: #e4e4e4;
     }
 }
+/* รายละเอียดค่าแรง */
+.wage{
+    /* border: solid 1px rgb(197, 197, 197) ; */
+    margin-top: 100px;
+}
 
+.wage img{
+    object-fit: cover;
+
+    /* text-align: center; */
+    /* width: 110%; */
+}
+
+.srup{
+    margin: 20px;
+    margin-top: 50px;
+}
 /* this is a footer */
 footer{
     background-color: #000000;
